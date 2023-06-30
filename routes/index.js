@@ -10,6 +10,10 @@ const homeController = require("../controller/index_controller")
 
 console.log("our first router is being loaded")
 
-router.get('/',homeController.home)
+router.get('/',homeController.home);
+
+router.use('/message',require('./message'));
+
+router.use('/post',require('./post'))
 
 module.exports = router;

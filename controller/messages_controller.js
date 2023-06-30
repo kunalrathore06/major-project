@@ -1,3 +1,3 @@
-module.exports.messages = function(req,res){
-    res.end("this page is for messages!")
+module.exports.message = function(req,res){
+    res.end("<h1>This is a message section<h1>")
 }
