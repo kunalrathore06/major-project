@@ -5,6 +5,10 @@ port = 8001;
 
 app.use('/',require('./routes'))
 
+app.set('view engine', 'ejss');
+
+app.set('views','./views')
+
 app.listen(port,function(err){
     if(err){
         console.log(`Error in running the server ${err}`)
